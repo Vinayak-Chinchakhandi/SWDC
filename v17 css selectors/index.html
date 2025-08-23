@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*Element Selector*/
+        div{
+            background-color: red;
+        }
+        /*Class Selector*/
+        .H{
+            background-color: lightblue;
+            color: brown;
+        }
+        /* ID Selector */
+        #yellow{
+            background-color: yellow;
+            color: red;
+        }
+        /* Child Selector */
+        div > h4{
+            background-color: lightgreen;
+        }
+        div>p{
+            background-color: lightsalmon;
+        }
+        /* Descendent selector */
+        div p{
+            background-color: rgb(254, 201, 181);
+        }
+        /* Universal Selector */
+        *{
+            background-color: beige;
+            margin: auto;
+            padding: 0%;
+        }
+        /*Pseudo Selector*/
+        a:visited{/*after visit link*/
+            color: yellow;
+        }
+        a:link{/*Before visit*/
+            color: rebeccapurple;
+        }
+        a:active{/*when pointer click on link*/
+            color: black;
+            background-color: red;
+        }
+        a:hover{/*When pointer goes on link*/
+            background-color: aqua;
+        }
+        h1:first-child{
+            background-color: aqua;
+        }
+        h1:nth-child(2){
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: lightcoral; font-family: cursive;">Today we are going to see the types of selectors in css</h1>
+    <ol>
+        <li>Element Selector</li>
+        <li>Class Selector</li>
+        <li>ID Selector</li>
+        <li>Child Selector</li>
+        <li>Descendent Selector</li>
+        <li>Universal Selector</li>
+        <li>Pseudo Selector</li>
+    </ol>
+
+    <div>This is a div Styled using element selector</div>
+
+    <h1 class="H">Headding 1</h1>
+    <h2 class="H">Headding 2</h2>
+
+    <div id="yellow">This is a div </div>
+
+    <div>
+        <h4>Headding inside a div</h4>
+        <p>Paragraph inside a div</p>
+    </div>
+
+    <a href="https://www.google1.com">Go to google</a>
+
+    <article>
+        <h1>h1 first child under div</h1>
+        <h2>h2</h2>
+    </article>
+</body>
+</html>

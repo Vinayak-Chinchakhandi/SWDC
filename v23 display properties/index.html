@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display properties</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        border: 2px solid blue;
+        display: inline-block;/*div is block but displayed as inline*/
+        padding: 45px;
+        margin: 34px;
+        width: 150px;
+    }
+    .box1{
+        /*display: none;*//*box will not be displayed and space also occupied by another element*/
+        visibility: hidden;/*box will not be displayed but its space is reserved kept empty*/
+    }
+</style>
+</head>
+<body>
+    <div class="box box1">This is a box</div>
+    <div class="box">also a nice box</div>
+    <span>This is a new box</span>
+    <span>This is another box</span>    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">Click here for some additional display properties</a> 
+</body>
+</html>

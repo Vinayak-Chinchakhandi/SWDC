@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(238, 232, 223);
+}
+h1{
+    background-color: rgb(180, 176, 250);
+}
+p{
+    background-color: pink;
+}
+#a1{
+    background-color: rgb(176, 245, 245);
+}
+div{
+    background-color: rgb(254, 224, 187);
+}
+span{
+    background-color: rgb(249, 169, 250);
+}
+#a2{
+    background-color: rgb(251, 170, 170);
+}
+ul{
+    background-color: #a8ec0c;
+}

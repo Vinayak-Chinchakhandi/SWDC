@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS List</title>
+    <style>
+        nav{
+            background: rgb(24, 246, 246);
+            margin: 15px
+        }
+        nav ul li {
+            list-style: devanagari;
+            /*removes marker that is point or star mark at the biginning if set to none but here it is devanagari*/
+            /* list-style-position: inside;
+            background-color: yellow;
+            border: 2px solid black; */
+            /* list-style-image: url(https://i.gifer.com/XOsX.gif); */
+            list-style: none;
+            display: inline-flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: rgb(24, 246, 246);
+        }
+
+        nav ul li:hover {
+            text-decoration: underline;
+            background: rgb(0, 255, 255);
+            text-decoration-color: rgb(0, 21, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

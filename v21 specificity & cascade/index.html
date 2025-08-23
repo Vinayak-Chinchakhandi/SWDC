@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity &Cascade</title>
+</head>
+<style>
+    h1{
+        color: aqua;
+    }
+    .yellow{
+        color: yellow;
+    }
+    .cred{
+        color: red;
+    }
+    .cpurple{
+        color: purple;
+    }
+    [data-x=a]{
+        background-color:red;
+    }
+</style>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+        <p>inline style>Id selector>class or attribute selector>Element selector>Universal selector</p>
+        <ol>
+            <h2>SPECIFICITY SCORES</h2>
+            <li>Universal selector=0</li>
+            <li>Element selector=1</li>
+            <li>class selector=10</li>
+            <li>attribute selector=10</li>
+            <li>psuedo selector=10</li>
+            <li>id selector=100</li>
+            <li>inline style=1000</li>
+            <li>important=10000</li>
+        </ol>
+    </div>
+</body>
+</html>

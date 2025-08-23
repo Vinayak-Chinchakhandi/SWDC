@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            width: 40vw;
+            height: 10vh;
+            border: 2px solid black;
+            /*overflow: scroll;*//*we will get scroll by using this property*/
+            overflow: auto;/*if box is full then automatically scroll will be added if not then tere will be no scroll*/
+            /* overflow-x: hidden;
+            overflow-y: scroll; */
+            overflow: hidden scroll;
+            /*white-space: nowrap;*/ /*we will get a horizontal scroll bar*/
+            /* text-overflow: ellipsis; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">This is a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa omnis, dignissimos, rerum et optio, repellendus reiciendis perferendis tempore dolore vel quisquam. Consequuntur maiores molestias, natus dolores praesentium ullam soluta quibusdam a fugiat expedita minus modi esse voluptates dolore iusto sequi assumenda cum possimus? Facere, neque? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quisquam a similique modi repudiandae perspiciatis optio impedit, perferendis inventore illo reiciendis eveniet omnis in voluptatem assumenda nobis hic culpa id amet exercitationem natus vitae aspernatur? Quo ea distinctio voluptatem soluta!</div>
+</body>
+</html>

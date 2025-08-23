@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing units</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 12px;
+    }
+
+    .box {
+        border: 2px solid black;
+        /* width: 233px; */
+        /*pixels*/
+        width: 80vw;
+        /*view port width*/
+        height: 10vh;
+        /*view port height*/
+        background-color: aqua;
+        margin: auto;
+        /*div center only for block element*/
+    }
+
+    .container {
+        border: 2px solid black;
+        width: 80vw;
+        /*view port width*/
+        /* height: 80vh; */
+        /*if we dont and height than box size increases as data increases*/
+        min-height: 80vh;
+        /*if we add min height then wheteher content there or not minimum height of box will be 80 vh*/
+        /*view port height*/
+        background-color: aqua;
+        margin: 23px auto;
+        /*div center only for block element*/
+        /* font-size: 18px; */
+    }
+
+    .container div {
+        /*font-size: 2em;*/
+        /* em means number of times the inherit value applied to it here "2em means 2times 18px (which is allready assigned)"*/
+        font-size: 2rem;
+        /*rem means number of times root value applied to that here "2rem means 2 times 12px (which is root font size)"*/
+        width: 50%;
+        /*this means 50% of parent*/
+        border: 2px solid red;
+    }
+
+    .mycont {
+        box-sizing: border-box;
+        border: 2px solid black;
+        margin: 23px auto;
+        background-color: red;
+        color: black;
+        /* width: 100vmin; */
+        /*minimum side in that device here in laptop minimum side is heinght so "100vmin means 100 vh"*/
+        width: 80vw;
+    }
+    .container div div{
+        border: 2px solid blue;
+        width: 50%;
+    }
+</style>
+
+<body>
+    <div class="box">This is a box</div>
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam quisquam architecto ex officiis id
+            eius modi, necessitatibus a nisi facilis aperiam, nihil quas autem corporis eum voluptate maiores ullam enim
+            incidunt. Eius itaque tempore beatae tempora, nostrum corporis? Voluptates nam, assumenda consequuntur
+            fugiat dolores reprehenderit voluptas placeat dicta deserunt, cupiditate earum facere?
+            <div>
+                This is a span inside p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci repudiandae provident corporis cum temporibus, quod animi asperiores dolor, beatae tempora sed ad expedita?
+            </div>
+        </div>
+    </div>
+    <div class="mycont">This is another container</div>
+</body>
+
+</html>
