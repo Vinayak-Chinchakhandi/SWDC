@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+
+        :root{
+            --color: rgb(0, 255, 191);
+            --seccolor: rgb(114, 206, 237);
+            --defaultpading: 23px;
+            --defaultopacity: 0.7;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            opacity: var(--defaultopacity);
+            list-style: none;
+            padding: var(--defaultpading);
+            border: 5px solid var(--seccolor);
+        }
+        ul li:first-child{
+            --color: rgb(246, 125, 12);
+            background-color: var(--color,blue);
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam tempora animi ut suscipit maxime? Magni incidunt nemo odio voluptatibus repellat vel quos ipsa? Expedita aliquid quidem eaque rerum aspernatur veniam recusandae quis beatae voluptate fugit facilis, molestiae modi dignissimos sunt quibusdam aliquam dolores facere? Omnis.
+    </div>
+    <div>
+        <ol>
+            <li>
+                Global variables are declared in root and can be used in anywhere using that variable name.
+                EX:- Green and blue are global
+            </li>
+            <li>
+                local variables declared in that block is used only there annot be excessed everywhere. EX:- Orange is local
+            </li>
+            <li>
+                if variable not found we can give another color after colon here blue is given instead of orange if color orange variable not found then blue will apply.
+            </li>
+            <li>
+                variables hold values of any type. like baclkground urls,Strings,numbers
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
