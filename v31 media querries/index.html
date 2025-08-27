@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querries</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        @media screen and (orientation: landscape) {
+            body {
+                border: 2px solid purple;
+            }
+        }
+
+        @media only screen and (max-width: 455px) {
+            body {
+                background-color: blue;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            width: 344px;
+            height: 344px;
+            padding: px;
+            margin: 3px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        This is a red body content.
+        <ol>
+            <li>phones less than 455</li>
+            <li>tablet 455 to 750</li>
+        </ol>
+
+        <!-- syntax 
+        @media not|only mediatype and (expressions){
+            CSS code;
+        } -->
+
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
