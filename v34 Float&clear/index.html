@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float&Clear</title>
+    <style>
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+            /*this will prevent overflow*/
+        }
+
+        img {
+            float: left;
+            /*image take only left and allow content at right */
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3) {
+            background-color: aqua;
+            clear: left;
+            /*if anything is floating in left than it will clear theleft and allow it to overwrite completely */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://images4.alphacoders.com/122/122698.jpg" width="230px" alt="">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus placeat assumenda aspernatur voluptas qui
+                molestiae mollitia blanditiis, sed doloribus tenetur voluptatum dolores maxime, sint fugiat architecto
+                eaque tempora animi pariatur in facilis dolor? Non.</p>
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate itaque doloribus tenetur
+            reprehenderit laudantium eius rem accusantium autem fuga obcaecati atque laborum nulla, ipsum rerum cum
+            nobis, facilis voluptatem sequi ex. Corporis, omnis ipsam! Dignissimos, tenetur? Nesciunt, illum quae. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Cumque hic quas aliquid placeat, provident labore quam
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, sint deleniti odio nostrum dolorum
+            alias a nulla nisi esse! Cumque esse, animi nobis, non officia magnam illo numquam hic alias eligendi
+            accusantium! Aut modi nemo rem. Et, optio. Enim dolores eveniet corporis magni beatae illum voluptatum, cum
+            vero tenetur doloribus, sint quisquam. Sint, atque unde facere cupiditate quis enim ullam mollitia, impedit,
+            quas fugiat autem deserunt maiores. Recusandae ab, nesciunt ducimus sed, rem maxime esse at molestiae cumque
+            fugit animi quam. Maxime, iusto? Et odio reiciendis necessitatibus maiores, natus deserunt vel illum
+            quibusdam. Ex enim, exercitationem culpa ducimus officia repudiandae quam deserunt aliquid corporis!
+            Reprehenderit maiores consequatur aliquam at eaque laborum officia inventore expedita consectetur. Odio
+            excepturi officiis voluptatum nostrum quisquam qui? Placeat esse, perspiciatis excepturi itaque beatae
+            accusantium recusandae dolorum. Consequatur repudiandae amet incidunt, facere veritatis reprehenderit
+            impedit sapiente, natus dolore dolor suscipit quasi eius ipsam. Magni vero vel reprehenderit libero dolorum
+            laborum, ut quasi officiis ipsum vitae maxime ratione molestias itaque facere minima similique dolore earum
+            iste in voluptatibus incidunt saepe excepturi nihil voluptas! Corrupti, labore rem suscipit, rerum incidunt
+            repellat asperiores sapiente dolorum explicabo nobis autem nesciunt illo id impedit reprehenderit quibusdam
+            deleniti nemo minus eum nostrum!necessitatibus, itaque in reprehenderit ipsa error debitis impedit, eius
+            ducimus beatae a eaque blanditiis sapiente similique nemo voluptatum nostrum pariatur. Accusantium ipsum
+            tempora incidunt eum quae, accusamus reiciendis ullam recusandae ea ducimus natus excepturi iure, nisi illum
+            soluta. Officia eius temporibus veniam nobis amet numquam cupiditate atque, aspernatur, ad repudiandae
+            pariatur! Ad suscipit numquam corporis aspernatur facere praesentium eius et iusto nemo perferendis
+            consequatur, nobis odio! Optio repudiandae totam, officiis nulla odio deserunt? Dicta fugit perspiciatis
+            quae ad optio, vel commodi nemo! Dolor, cum.
+        </div>
+        <div class="card">card3</div>
+    </div>
+</body>
+
+</html>
