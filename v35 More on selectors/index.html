@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        }
+        .box::first-line{
+            color: yellow;
+        } */
+        /* .boxes * {
+            color: blue;
+            /*all elements inside boxes will be colored
+            border: 2px solid black;
+        } */
+        /*Group selector*/
+        /* p,a,.box,[data-color="primary"]{
+            padding-top: 45px;
+        } */
+        /* .box:nth-child(odd){
+            background-color: aqua;
+         } */
+        /* .box:nth-last-child(1){
+            background-color: red; /*from last first child
+          } */
+        .boxes::before {
+            content: "This will be added before the boxes using before selector";
+        }
+
+        .boxes::after {
+            content: "This will be added after the boxes using after selector these both before and after are called psuedo elements";
+            color: red;
+        }
+
+        .boxes::selection {
+            /*if text is selected then these styles will apply*/
+            color: aqua;
+            background-color: black;
+        }
+
+        .box::first-letter {
+            color: peru;
+            font-size: 45px;
+        }
+
+        input::placeholder {
+            color: rgb(64, 64, 68);
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">This is a first box</div>
+        <div class="box">This is a box</div>
+        <div class="box">This is a box</div>
+        <input type="text" placeholder="Enter your name">
+    </div>
+</body>
+
+</html>
