@@ -156,3 +156,8 @@
 - [📂 Repo](https://github.com/Vinayak-Chinchakhandi/SWDC/tree/main/v37%20Exercise5)  
 - [▶️ YouTube](https://www.youtube.com/watch?v=8Hk4MmO9ZeQ&list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&index=37&pp=iAQB0gcJCbIJAYcqIYzv)  
 ***
+
+**38. Flexbox**  
+- [📂 Repo](https://github.com/Vinayak-Chinchakhandi/SWDC/tree/main/v38%20flexbox)  
+- [▶️ YouTube](https://www.youtube.com/watch?v=DWk2mndNTHY)  
+***
