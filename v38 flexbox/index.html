@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            justify-content: center;
+            /*main axis center*/
+            align-items: center;
+            /*cross axis center used when single line content is there*/
+            flex-direction: row;
+            /*direction of flex*/
+            /* flex-wrap: wrap; */
+            /*prevent overflow of boxes*/
+            /* align-content: center; */
+            /*cross axis center when multiple line content is present*/
+            /* flex-flow: row row-reverse; */
+            /*used to write flex-direction and flexx wrap in single property*/
+            /*there is no justify items in flexbox*/
+            gap: 30px;
+            column-gap: 23px;
+        }
+
+        /* if order is less then item will be at first if order increases then its position also increases here a item with order 100 goes last */
+        .item {
+            flex-grow: 1;/*by default flex grow will be 0*/
+            width: 60px;
+            height: 60px;
+            background-color: rgb(230, 144, 230);
+            border: 2px solid black;
+            /* margin: 4px; */
+        }
+
+        /* here item 1 order is set to 100 since it has high order it will go last.
+        default order is 0 for all items */
+        .order-1 {
+            order: 100;
+        }
+        .item-2{
+            align-self: flex-start;/*only this item will align at start*/
+            flex-grow: 2;/*here second item will take place of two items*/
+            flex-shrink: 2;/*here this block will shrink 2times then other block when screen size decreases*/
+        }
+        /* this will come second last */
+        .order-10 {
+            order: 10;
+        }
+        .item-4{
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item order-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item">3</div>
+            <div class="item item-4">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item order-10">b10</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+
+        </div>
+    </main>
+</body>
+
+</html>
