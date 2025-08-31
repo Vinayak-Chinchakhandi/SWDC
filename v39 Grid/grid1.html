@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container {
+            width: 80vw;
+            height: 50vh;
+            border: 2px solid black;
+            display: grid;
+            /* here we specify number of rows and columns and its demension in grid */
+            /* we can also give name to rows and columns */
+            /* grid-template-columns: [first] 120px [Second] 100px [third];
+            grid-template-rows: 100px 100px 100px; */
+            /* fr is a unit used to give size to the grids her 1fr means one fraction of total grid if we write 1fr 1fr 1fr then three fractions will be createdeach have equal i fraction */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* we can use this repeat function if we want to repeat 1fr for 3 times. */
+            /* here in below minmax means for that grid minimum 100px and max 1fr */
+            /* grid-template-columns: repeat(4,minmax(100px,1fr)); */
+            grid-template-columns: repeat(4, minmax(100px, 40px));
+            /* gap: 34px; */
+            row-gap: 10px;
+            column-gap: 44px;
+
+            /* JUSTRIFY AND ALIGN ITEMS IS USED TO CENTER ON CELLS */
+            justify-items: center;
+            align-items: center;
+
+            /* WHEN GRID IS SMALLER THAN CONTAINER THEN TO CENTER ENTIRE GRID WE USE JUSTIFY CONTENT AND ALIGN CONTENT */
+            /* justify-content: center; */
+
+            /* IF WE USE PLACE CONTENT CENTER THEN BOTH JUSTIFY AND ALLIGN WILL BE SET AT CENTER */
+            place-content: center;
+        }
+
+        .items {
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+
+        /* here for both items 1 and 4 i have given same grid so both will overlap in same grid */
+        .i4 {
+            /* here we can use row number or name that we have given to rows and columns */
+            /* grid-row: 1/2; */
+            /* we can do this also */
+            /* grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column: 1/2; */
+        }
+
+        .i1 {
+            /* grid-row: 1/2;
+            grid-column: 1/2; */
+        }
+
+        .i2 {
+            /* align-self: start;
+            justify-self: end; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items i1">1</div>
+        <div class="items i2">2</div>
+        <div class="items">3</div>
+        <div class="items i4">4</div>
+        <div class="items">5</div>
+    </div>
+</body>
+
+</html>
