@@ -161,3 +161,8 @@
 - [📂 Repo](https://github.com/Vinayak-Chinchakhandi/SWDC/tree/main/v38%20flexbox)  
 - [▶️ YouTube](https://www.youtube.com/watch?v=DWk2mndNTHY)  
 ***
+
+**38. Grid**  
+- [📂 Repo](https://github.com/Vinayak-Chinchakhandi/SWDC/tree/main/v39%20Grid)  
+- [▶️ YouTube](https://www.youtube.com/watch?v=7AgEjgUtho4)  
+***
