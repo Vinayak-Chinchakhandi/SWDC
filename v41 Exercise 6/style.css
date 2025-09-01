@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    background-color: white;
+    border: 2px solid black;
+    height: 114px;
+    align-items: center;
+    gap: 40px;
+}
+
+.lg {
+    height: 90px;
+}
+
+.logo {
+    margin: 0 10px 0 200px;
+}
+
+.products {
+    margin-left: 183px;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.btnbuy {
+    background-color: rgb(247, 250, 250);
+    border: 3px solid black;
+    padding: 10px 30px;
+    font-weight: bold;
+    margin-left: 200px;
+}
+
+.btnbuy:hover {
+    background-color: #f1f1f1;
+}
+
+.btnsh:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background: #f1f1f1;
+}
+
+.products:hover .dropdown-content,
+.pricing:hover .dropdown-content,
+.resources:hover .dropdown-content,
+.company:hover .dropdown-content,
+.languages:hover .dropdown-content {
+    display: block;
+}
+
+.sh {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 50px;
+    background: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.input {
+    width: 170px;
+    height: 25px;
+}
+
+.search:hover .sh {
+    display: block;
+}
