@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <Style>
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            text-align: center;
+            align-content: center;
+
+            /* rotate using degree */
+            /* transform: rotate(45deg); */
+
+            /* Rotate using turn here 0.25 turn means 0.25 0f 360degree means 90degree */
+            /* transform: rotate(0.25turn); */
+
+            /* transform using axis */
+            /* transform: rotatex(40deg); */
+
+            /* scale size using transform */
+            /* transform: scale(1.6); */
+
+            /* scale along axis */
+            /* transform: scalex(2); */
+
+            /* skew */
+            /* transform: skew(8deg); */
+
+            /* skew along axis but it cannot be done in z axis */
+            /* transform: skewy(5deg); */
+
+            /* translate means move 
+            translate can also applied on axis */
+            /* transform: translate(40%); */
+
+            /* multiple transform in single line */
+            transform: translateY(100%) skew(10deg) translateX(80%);
+        }
+        .container{
+            height: 80vh;
+            width: 100vw;
+            border: 2px solid purple;
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+</body>
+
+</html>
