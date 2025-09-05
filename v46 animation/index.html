@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            background-color: lightgreen;
+            width: 30vw;
+            height: 80vh;
+        }
+        .box{
+            background-color: lightsalmon;
+            width: 34px;
+            height: 45px;
+            /* animation: Myanimation; */
+            /* animation-duration: 3s; */
+            /* three times animation will happen */
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function: ease-out; */
+            /* animation-delay: 0.2s; */
+            /* animation-direction: alternate-reverse; */
+            /* we can pause animation wherever we want */
+            /* animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: Myanimation 3s ease-in-out 0.2s 1 backwards,
+                       Animation2 3s ease-in-out 0.1s 1;
+            /* by adding direction if we add forwads 
+            than after completing animation box will move to forward 
+            if we add backward then at last it will return backward 
+            means original position */
+            /* WE CAN ADD , AND ADD MULTIPLE ANIMATION */
+        }
+        @keyframes Myanimation {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform: translateX(1000px);
+            }
+        }
+        @keyframes Animation2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            BOX
+        </div>
+    </div>
+</body>
+</html>
