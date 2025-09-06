@@ -109,3 +109,98 @@ nav {
     width: max-content;
     margin-top: 50px;
 }
+
+.round {
+    width: 75px;
+    height: 75px;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(255, 221, 0);
+    border-radius: 40px;
+    border: 3px solid black;
+    margin-right: 20px;
+}
+
+.round p {
+    margin: 19px 8px;
+    font-size: 40px;
+}
+
+.subhead2 {
+    display: flex;
+    align-items: first baseline;
+    margin-left: 340px;
+    margin-top: 110px;
+}
+
+.subhead2 .d1 {
+    font-size: 27px;
+    margin-right: 5px;
+    align-self: start;
+    margin-top: 20px;
+}
+
+.subhead2 small {
+    font-size: 17px;
+    align-self: start;
+    margin-top: 29px;
+}
+
+.subhead2 small a {
+    color: black;
+    text-decoration: none;
+}
+
+.maingrid {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 410px 410px 410px;
+    grid-template-rows: 250px 250px 250px 250px;
+    justify-content: center;
+    gap: 40px 40px;
+}
+
+.items {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    width: 410px;
+    height: 250px;
+    text-wrap: wrap;
+}
+
+.items .p1 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.items .p2 {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+}
+.items .itmbtn{
+    margin-top: 35px;
+    text-align: center;
+}
+.items a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    border-radius: 5px;
+}
+.hash{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 23px;
+}
+.hash p{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
