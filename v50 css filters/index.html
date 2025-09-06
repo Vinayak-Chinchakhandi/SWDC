@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Filters</title>
+    <style>
+        img{
+            /* blur 10px */
+            /* filter: blur(5px); */
+        }
+        .img1{
+            filter: brightness(152%) contrast(50%);
+        }
+        .img2{
+            /* img will turn negative */
+            filter: invert(1);
+        }
+        .img3{
+            /* img will turn gray, black and white */
+            filter: grayscale(150%) sepia(100%);
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <img class="img1" src="https://img.freepik.com/premium-photo/tranquil-scene-majestic-waterfall-forest-generated-by-ai_986584-2864.jpg" alt="">
+        <img class="img2" src="https://tse4.mm.bing.net/th/id/OIP.WWkn-mGUFcf4jV-v0kR8-wHaEK?pid=Api&P=0&h=180" alt="">
+        <img class="img3" src="https://static.toiimg.com/thumb/msid-123723987,imgsize-26526,width-400,resizemode-4/akshay-kumar-in-chhaava.jpg" alt="">
+    </div>
 </body>
 </html>
