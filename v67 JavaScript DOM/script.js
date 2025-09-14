@@ -4,7 +4,7 @@ document.body //returns all body and its elements
 document.body.childnodes  //returns all child nodes of body
 document.body.childNodes[0]  //text
 document.body.childNodes[1]  //container div
-document.body.childNodes[1].childNodes  //bpx divs all5
+document.body.childNodes[1].childNodes  //box divs all5
 let cont = document.body.childNodes[1]
 cont.firstChild  //text
 cont.firstElementChild  //box1
