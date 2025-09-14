@@ -5,7 +5,8 @@ console.log("Five types of loops in js");
 // for loop
 // for in loop
 // foor of loop
-// while loopdo while loop
+// while loop 
+// do while loop
 
 //===============for loop ===============
 let a=1;
