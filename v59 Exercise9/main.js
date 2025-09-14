@@ -1,4 +1,6 @@
 console.log("Faulty calculator");
+//performs fault operation 10% of times
+
 let random = Math.random();
 
 function faultycalculator() {
