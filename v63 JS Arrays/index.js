@@ -32,8 +32,8 @@ console.log(arr)
 delete arr[3] // delete element at 3rd position
 //delete element but still length is same 
 //that position is left empty means that is undefined 
-console.log(arr[3]) //undefined becauseelement is deleted but place left empty
 console.log(arr)
+console.log(arr[3]) //undefined becauseelement is deleted but place left empty
 
 
 
