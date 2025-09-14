@@ -1,6 +1,6 @@
 console.log("HI hello how are you")
 
-//let is a block code if declared in particular block then accessed only in that block 
+//let is a block scope if declared in particular block then accessed only in that block 
 
 //let is a block scope
 //var is a global scope
@@ -9,7 +9,7 @@ let a=5;
 //a=a+1; //this is valid as a is variable
 var b=4;
 var c="good morning"
-var _a="AKash"  //valid
+var _a="AKash"  //valid variable name cannot start with _
 
 //var 55a= "Amit" //not valid cannot start with number
 
