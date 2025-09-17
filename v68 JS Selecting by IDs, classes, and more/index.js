@@ -55,7 +55,7 @@ console.log(a[5].closest("html"))  // it will return the html
 
 //==================contains=================================
 console.log(document.querySelector(".container").contains(a[4]))
-//returns true as container container box 4
+//returns true as container containes box 4
 console.log(document.querySelector(".container").contains(document.querySelector("body")))
 //returns false as container do not contain body
 console.log(document.querySelector("body").contains(document.querySelector(".container")))
