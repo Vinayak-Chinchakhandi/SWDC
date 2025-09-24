@@ -49,7 +49,7 @@ let numbers = [1, 2, 3, 4, 5]
 console.log(numbers.splice(1, 3)) // removes [2,3,4] and prints
 console.log(numbers) //[1,5]
 let n = [1, 4, 3, 56, 78, 3, 6, 8]
-console.log(n.splice(1,3,222,333))  // removes [4,3,56] and add 222,333 in same place put prints only removed elements
+console.log(n.splice(1,3,222,333))  // removes [4,3,56] and add 222,333 in same place but prints only removed elements
 console.log(n)  //[1, 222, 333, 78, 3, 6, 8]
 
 let b=[1,2,3,4,5]
