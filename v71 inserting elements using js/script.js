@@ -11,13 +11,13 @@ console.log(document.querySelector(".container").tagName)//returns tag name of c
 console.log(document.querySelector(".container").nodeName)//returns nodename of container
 
 //tag name is applied only for element
-//nnodename is applied for all nodes like elements,text,coment
+//nodename is applied for all nodes like elements,text,coment
 
 console.log(document.querySelector(".container").textContent)//returns text inside the element (text-all tags)
 
 console.log(document.querySelector(".container").hidden)//false as conatainer is not hidden
 
-// console.log(document.querySelector(".container").hidden=true)//conatainer is not hidden
+// console.log(document.querySelector(".container").hidden=true)//conatainer is now hidden
 
 console.log(document.querySelector(".box").innerHTML="inner html element data of box is changed using js")//innerhtml of first box is changed
 
