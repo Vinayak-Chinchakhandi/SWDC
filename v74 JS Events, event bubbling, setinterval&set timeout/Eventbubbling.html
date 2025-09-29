@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .child {
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 34px;
+            padding: 34px;
+            cursor: pointer;
+        }
+
+        .childcontainer {
+            background-color: aqua;
+            padding: 34px;
+            margin: 34px;
+        }
+
+        .container {
+            background-color: beige;
+            padding: 34px;
+            margin: 34px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Important</h1>
+    <div class="container">
+        <section class="childcontainer">
+            <div class="child">This is a child</div>
+        </section>
+    </div>
+    <script>
+        // here if we click on child 
+        // then automaticaly we also 
+        // clicked childcontainer and container
+        // as child is inside child and childcontainer
+        //this is event bubbling
+
+        //To stop bubbling we have to use stopPropagation
+
+        document.querySelector(".child").addEventListener("click", (e) => {
+            // e.stopPropagation() //bubbling wil stop here only
+            alert("Child was clicked")
+        })
+
+        document.querySelector(".childcontainer").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("Childcontainer was clicked")
+        })
+
+        document.querySelector(".container").addEventListener("click", (e) => {
+            // e.stopPropagation()
+            alert("container was clicked")
+        })
+
+        //=======================================Set Interval============================================
+
+        //used to repeat something in interval
+
+        function getcolor() {
+            //a + Math.random() *(b-a)                 to generate random number between a to b
+            //math.ceil( a + Math.random() *(b-a) )    to convert that number to nearest integer
+            let v1 = Math.ceil(0 + Math.random() * 255)
+            let v2 = Math.ceil(0 + Math.random() * 255)
+            let v3 = Math.ceil(0 + Math.random() * 255)
+            return `rgb(${v1},${v2},${v3})`
+        }
+
+        let a = setInterval(() => {//here for every one second color of child container will change 
+            document.querySelector(".childcontainer").style.background = getcolor()
+        }, 1000);
+
+        console.log(a)  //it will return a value here 1 using that we can stop repeatation
+
+        // clearInterval(1)     //using clear interval we can stop repeatation
+
+        //============================Set Timeout===================================================
+
+        //used to do a perticular task after some time
+
+        let b=setTimeout(() => {//here after five second color of container will change to aqua once 
+            document.querySelector(".container").style.background = "aqua"
+        }, 5000);
+
+        console.log(b)
+
+        //it can be prevented by using clear timeout
+
+        // clearTimeout(2)   //using clear timeout we can stop this change
+    </script>
+</body>
+
+</html>
