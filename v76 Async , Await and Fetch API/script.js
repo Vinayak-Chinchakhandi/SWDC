@@ -29,7 +29,7 @@ async function getdata() {
     })
     let data = await x.json()
     return data
-}
+} 
 
 async function main() {
 
