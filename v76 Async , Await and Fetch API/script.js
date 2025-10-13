@@ -14,7 +14,8 @@
 async function getdata() {
     //simulate getting data from server
     // let x = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-    //here we are using fetch api, now time require to load data from the server using await we are waiting untill data loaded
+    //here we are using fetch api, now time require to load data from the server,
+    //  using await we are waiting untill data loaded
     let x = await fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         body: JSON.stringify({
