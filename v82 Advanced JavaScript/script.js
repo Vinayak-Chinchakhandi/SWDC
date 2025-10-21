@@ -38,6 +38,6 @@ async function sleep(){
         c:3
     }
 
-    let {a,b} = obj   //extract a * b from obj
+    let {a,b} = obj    //extract a * b from obj
     console.log(a,b)   //1 ,2 
 })()
