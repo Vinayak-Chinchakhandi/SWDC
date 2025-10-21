@@ -16,7 +16,7 @@ async function sleep(){
 //     console.log(b)
 // })()
 
-//==================================Destructuring===========================================
+//===================================Destructuring============================================
 
 (async function main(){
     // let x,y =[1,5]                               //x=undefined,  y= array of 1&5
@@ -41,3 +41,16 @@ async function sleep(){
     let {a,b} = obj    //extract a * b from obj
     console.log(a,b)   //1 ,2 
 })()
+
+//===================================Spread Syntax============================================
+function sum(a,b,c){
+    return a+b+c
+}
+
+let arr = [1,4,6]
+
+let obj = {...arr}   //map array elements to object obj
+console.log(obj)     //{0: 1, 1: 4, 2: 6}
+
+console.log(arr[0]+arr[1]+arr[2])   //general method            =>11
+console.log(sum(...arr))    //...arr means spread array arr     =>11
